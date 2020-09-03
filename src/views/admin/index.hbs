@@ -1,0 +1,39 @@
+{{> navegacion}}
+
+<div class="mt-5">
+    <h2>MODULO ADMINISTRADOR</h2>
+    <form action="/guardarpersona" method="POST" class="persona">
+        <div class="Informacionpersona">
+            <label for="" class="nombre">Nombres</label>
+            <input name="nombrepersona"type="text" class="form-control">
+            <label for="" class="nombre">Apelidos</label>
+            <input name="apellidopersona"type="text" class="form-control">
+            <label for="exampleFormControlFile1">Subir Imagen</label>
+            <input name="foto" type="file" class="form-control-file" id="exampleFormControlFile1">
+            <button name="guardarpersona" type="submit" class="btn btn-primary mb-2">Guardar Datos</button>
+        </div>
+    </form>    
+
+ <form action="/guardarproyecto" method="POST" class="proyectos"></form>
+  <div class="proyectos">
+    <label for="exampleFormControlTextarea1">Titulo Proyecto</label>
+    <input name="tituloproyecto" type="text" class="form-control">
+    <label for="exampleFormControlTextarea1">Descripcion Proyecto</label>
+    <textarea name="descripcionproyecto" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <label for="exampleFormControlFile1">Subir Imagen</label>
+    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+    <button name="guardarproyectos" type="submit" class="btn btn-primary mb-2">Guardar Proyecto</button>
+  </div>
+  </form>
+
+   <form action="/guardartrabajo" method="POST" class="trabajos"></form>
+    <div class="trabajodesem">
+        <label for="exampleFormControlTextarea1">Titulo Trabajo</label>
+        <input name="titulotrabajo"type="text" class="form-control">
+        <label for="exampleFormControlTextarea1">Descripcion trabajo</label>
+        <textarea name="descpciontrabajo" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <button name="guardartrabajos" type="submit" class="btn btn-primary mb-2">Guardar Trabajo</button>
+    </div>
+    </form>
+
+</div>
